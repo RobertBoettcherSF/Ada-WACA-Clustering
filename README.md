@@ -40,7 +40,7 @@ convenient score that peaks at the ideal degree.
 | Graph | `Empty_Graph`, `Add_Undirected_Edge`, `Build_Unit_Disk` | Topology |
 | Helpers | `Near`, `Degree` | Utilities |
 | Components | `Power_Appropriateness`, `Dissemination_Degree_Score`, `Local_Clustering_Coefficient` | Weight parts |
-| Weight | `Compute_Weight` | \(W_0+K\) |
+| Weight | `Compute_Weight` | $W_0+K$ |
 | Election | `Elect_Clusterheads`, `Run_WACA` | Fig.1 + roles |
 | Hierarchy | `Follow_To_Root` | Walk CH pointers |
 | Stability | `King_Bonus_Update`, `Stability_Coefficient` | Educational Fig.4 |
@@ -133,7 +133,7 @@ Requires GNAT with Ada 2022 support. Root layout only (no `src/`).
 `tests.adb` is the sole main. It uses a local `Check` helper (no
 `Ada.Assertions` for test logic) and ends with
 `pragma Assert (Fail_Count = 0)`. Coverage includes PA monotonicity, DD peak,
-triangle/star \(c_L\), clique CH election, path sub-head chains, king-bonus
+triangle/star $c_L$, clique CH election, path sub-head chains, king-bonus
 stability, empty/singleton graphs, invalid inputs, deterministic tie-break,
 and role partition.
 
