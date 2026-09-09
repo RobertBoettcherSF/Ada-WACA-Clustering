@@ -55,34 +55,34 @@ Named exceptions: `Invalid_Argument`, `Degenerate_Geometry`,
 
 ### Power, signal, dissemination, clustering
 
-\[
+$$
 \mathrm{PA}(d)=\ln\bigl(1+P(d)\bigr),\qquad
 s(d)\in[0,1],
-\]
+$$
 
-\[
+$$
 \mathrm{DD}(d)=\frac{1}{1+\bigl|\deg(d)-dd_I\bigr|},\qquad
 c_L(d)=\begin{cases}
 \dfrac{e(N(d))}{\deg(\deg-1)/2} & \deg\ge 2\\
 0 & \text{otherwise}
 \end{cases}
-\]
+$$
 
-where \(e(N(d))\) is the number of edges among neighbors of \(d\).
+where $e(N(d))$ is the number of edges among neighbors of $d$.
 
 ### Base weight and king bonus
 
-\[
+$$
 W_0(d)=wf_1\cdot\mathrm{PA}+wf_2\cdot s+wf_3\cdot\mathrm{DD}+wf_4\cdot c_L,
 \qquad
 W(d)=W_0(d)+K(d).
-\]
+$$
 
-Default factors (paper simulation style): \(wf_1=0.9\), \(wf_2=1\),
-\(wf_3=0.85\), \(wf_4=0.65\). King bonus \(K\in[0,99]\): on a stable
+Default factors (paper simulation style): $wf_1=0.9$, $wf_2=1$,
+$wf_3=0.85$, $wf_4=0.65$. King bonus $K\in[0,99]$: on a stable
 clusterhead neighborhood increase by 33 (cap 99); on churn reduce by
-\(K\cdot s\) with stability coefficient
-\(s=|M\Delta N|/(|M|+|N|)\); non-CH or isolated CH → \(K=0\).
+$K\cdot s$ with stability coefficient
+$s=|M\Delta N|/(|M|+|N|)$; non-CH or isolated CH $\to K=0$.
 
 ### Election and hierarchy
 
