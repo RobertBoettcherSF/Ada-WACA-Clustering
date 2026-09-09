@@ -24,12 +24,12 @@ convenient score that peaks at the ideal degree.
 | Concern | Approach | Notes |
 | --- | --- | --- |
 | **Graph** | Undirected 1-hop neighbor lists | Unit-disk *or* explicit edges |
-| **PA** | \(\mathrm{PA}=\ln(1+P(d))\) | Log diminishing returns on power |
-| **Signal** | \(s(d)\in[0,1]\) | Backbone / cellular signal |
-| **DD** | \(1/(1+\|deg-dd_I\|)\) | Peaks at ideal degree (e.g. 7) |
-| **\(c_L\)** | Edges among nbrs / \(\binom{deg}{2}\) | 0 if \(deg<2\) |
-| **Weight** | \(W=W_0+K\), \(W_0=\sum wf_i\cdot\cdot\) | King bonus \(K\ge0\) |
-| **Election** | Argmax weight in \(N(d)\cup\{d\}\) | Ties → lowest device id |
+| **PA** | $\mathrm{PA}=\ln(1+P(d))$ | Log diminishing returns on power |
+| **Signal** | $s(d)\in[0,1]$ | Backbone / cellular signal |
+| **DD** | $1/(1+|deg-dd_I|)$ | Peaks at ideal degree (e.g. 7) |
+| **$c_L$** | Edges among nbrs / $\binom{deg}{2}$ | 0 if $deg<2$ |
+| **Weight** | $W=W_0+K$, $W_0=\sum w_i f_i$ | King bonus ($K\ge0$) |
+| **Election** | Argmax weight in $N(d)\cup\{d\}$ | Ties → lowest device id |
 | **Roles** | CH / Sub-Head / Slave | Paper Fig.1 `isClusterHead` / `isSubHead` |
 
 ## Features
