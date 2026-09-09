@@ -86,10 +86,10 @@ $s=|M\Delta N|/(|M|+|N|)$; non-CH or isolated CH $\to K=0$.
 
 ### Election and hierarchy
 
-Each device \(d\) sets \(ch(d)\) to \(\arg\max_{x\in N(d)\cup\{d\}} W(x)\)
-(lowest id on ties). If \(ch(d)=d\) then \(d\) is a **clusterhead**; if some
-neighbor elects \(d\) but \(d\) does not elect itself, \(d\) is a **sub-head**;
-otherwise a **slave**. `Follow_To_Root` walks \(ch\) until a fixed point.
+Each device $d$ sets $ch(d)$ to $\arg\max_{x\in N(d)\cup\{d\}} W(x)$
+(lowest id on ties). If $ch(d)=d$ then $d$ is a **clusterhead**; if some
+neighbor elects $d$ but $d$ does not elect itself, $d$ is a **sub-head**;
+otherwise a **slave**. `Follow_To_Root` walks $ch$ until a fixed point.
 
 ## Usage
 
